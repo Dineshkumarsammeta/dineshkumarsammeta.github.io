@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  crossorigin="anonymous"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+          <div class="logo">MyPortfolio</div>
+          <ul class="nav-links">
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            
+            <!-- Portfolio with dropdown -->
+            <li class="dropdown">
+              <a href="#portfolio">Portfolio &#9662;</a>  <!-- Down arrow -->
+              <ul class="dropdown-menu">
+                <li><a href="#education">Education</a></li>
+                <li><a href="#Certification">Certification</a></li>
+                <li><a href="#achievements">achievements </a></li>
+              </ul>
+            </li>
+            
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+      
+
+  <main>
+    <section id="home" class="section home-section">
+        <div class="home-content">
+          <div class="intro-text">
+            <h1>Hey, there <span class="wave">👋</span></h1>
+          </div>
+      
+          <!-- Delayed content -->
+          <div class="intro-text delayed-content">
+            <p>Hi, I am Dinesh Kumar, a passionate developer and data enthusiast.</p>
+      
+            <div class="buttons">
+              <a href="#contact" class="btn btn-primary">Get in Touch</a>
+              <a href="#portfolio" class="btn btn-secondary">View My Work</a>
+            </div>
+      
+            <div class="social-icons">
+              <a href="https://linkedin.com/in/yourprofile" target="_blank" aria-label="LinkedIn">
+                <img src="linkedin-icon.svg" alt="LinkedIn" />
+              </a>
+              <a href="https://github.com/yourusername" target="_blank" aria-label="GitHub">
+                <img src="github-icon.svg" alt="GitHub" />
+              </a>
+            </div>
+          </div>
+      
+          <!-- Profile Photo -->
+          <div class="profile-photo delayed-content">
+            <img src="about-pic.png" alt="Your Name" />
+          </div>
+        </div>
+      </section>
+      
+
+      
+      
+      <section id="about" class="section about-section">
+        <div class="about-container">
+          <!-- Photo -->
+          <div class="about-photo">
+            <img src="about-pic.png" alt="Profile Photo">
+          </div>
+      
+          <!-- Description -->
+          <div class="about-description">
+            <h2>About Me</h2>
+            <p>I build modern full-stack applications with a focus on clean design and data-driven solutions. I'm passionate about technology, problem-solving, and lifelong learning.</p>
+          </div>
+        </div>
+      
+        <!-- Skill Cards -->
+        <div class="skills-grid">
+          <div class="skill-card">
+            <div class="icon">🧠</div>
+            <h3>Data Analysis</h3>
+            <p>Skilled in analyzing complex datasets to derive actionable insights using Python and SQL.</p>
+          </div>
+          <div class="skill-card">
+            <div class="icon">🛠️</div>
+            <h3>Problem Solver</h3>
+            <p>Enjoy solving challenging technical problems with clean, efficient, and scalable code.</p>
+          </div>
+          <div class="skill-card">
+            <div class="icon">🌐</div>
+            <h3>Tech Explorer</h3>
+            <p>Continuously exploring new technologies like Kafka, BigQuery, and Graph Databases.</p>
+          </div>
+          <div class="skill-card">
+            <div class="icon">⚙️</div>
+            <h3>Full-Stack Dev</h3>
+            <p>Experienced in building responsive web apps using React, Node.js, and REST APIs.</p>
+          </div>
+        </div>
+      </section>
+      
+      <section id="resume" class="resume-section">
+        <h2>Resume</h2>
+        <p>You can preview or download my resume below to learn more about my qualifications, experience, and technical skills.</p>
+      
+        <div class="resume-buttons">
+          <a href="your-resume.pdf" target="_blank" class="btn resume-btn preview-btn">
+            <i class="fas fa-eye"></i> Preview Resume
+          </a>
+          <a href="your-resume.pdf" download class="btn resume-btn download-btn">
+            <i class="fas fa-download"></i> Download Resume
+          </a>
+        </div>
+      </section>
+      
+      <section id="experience" class="experience-section">
+        <h2>Experience</h2>
+      
+        <div class="timeline">
+          <!-- Timeline Item 5 -->
+          <div class="timeline-item">
+            <div class="timeline-icon">
+              <i class="fas fa-briefcase"></i>
+            </div>
+            <div class="timeline-content">
+              <div class="company-header">
+                <img src="logo5.png" alt="Company 5 Logo" class="company-logo" />
+                <div>
+                  <h3>Company Five</h3>
+                  <p class="meta">Jan 2023 – Present | London, UK</p>
+                </div>
+              </div>
+              <p>Leading data engineering initiatives and managing cloud infrastructure for scalable pipelines.</p>
+            </div>
+          </div>
+      
+          <!-- Timeline Item 4 -->
+          <div class="timeline-item">
+            <div class="timeline-icon">
+              <i class="fas fa-briefcase"></i>
+            </div>
+            <div class="timeline-content">
+              <div class="company-header">
+                <img src="logo4.png" alt="Company 4 Logo" class="company-logo" />
+                <div>
+                  <h3>Company Four</h3>
+                  <p class="meta">Aug 2021 – Dec 2022 | Manchester, UK</p>
+                </div>
+              </div>
+              <p>Worked as a full-stack developer building modern web applications using React and Node.js.</p>
+            </div>
+          </div>
+      
+          <!-- Timeline Item 3 -->
+          <div class="timeline-item">
+            <div class="timeline-icon">
+              <i class="fas fa-briefcase"></i>
+            </div>
+            <div class="timeline-content">
+              <div class="company-header">
+                <img src="logo3.png" alt="Company 3 Logo" class="company-logo" />
+                <div>
+                  <h3>Company Three</h3>
+                  <p class="meta">Jan 2020 – Jul 2021 | Birmingham, UK</p>
+                </div>
+              </div>
+              <p>Improved database performance and built custom ETL pipelines for business intelligence solutions.</p>
+            </div>
+          </div>
+      
+          <!-- Timeline Item 2 -->
+          <div class="timeline-item">
+            <div class="timeline-icon">
+              <i class="fas fa-briefcase"></i>
+            </div>
+            <div class="timeline-content">
+              <div class="company-header">
+                <img src="logo2.png" alt="Company 2 Logo" class="company-logo" />
+                <div>
+                  <h3>Company Two</h3>
+                  <p class="meta">May 2018 – Dec 2019 | Hyderabad, India</p>
+                </div>
+              </div>
+              <p>Supported SAP security operations and ensured compliance with enterprise IT policies.</p>
+            </div>
+          </div>
+      
+          <!-- Timeline Item 1 -->
+          <div class="timeline-item">
+            <div class="timeline-icon">
+              <i class="fas fa-briefcase"></i>
+            </div>
+            <div class="timeline-content">
+              <div class="company-header">
+                <img src="logo1.png" alt="Company 1 Logo" class="company-logo" />
+                <div>
+                  <h3>Company One</h3>
+                  <p class="meta">Jul 2014 – Apr 2018 | Chennai, India</p>
+                </div>
+              </div>
+              <p>Started as a junior developer and contributed to internal tools for automation and monitoring.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <section id="projects" class="projects-section">
+        <h1>Projects</h1>
+        
+        <div class="filter-buttons">
+          <button class="filter-btn active" data-filter="all">All Projects</button>
+          <button class="filter-btn" data-filter="data-science">Data Science Projects</button>
+          <button class="filter-btn" data-filter="electrical">Electrical Projects</button>
+        </div>
+      
+        <div class="carousel-wrapper">
+          <button id="leftScroll" class="scroll-btn">&#10094;</button>
+          
+          <div class="carousel-container" id="carouselContainer">
+            <!-- Project cards will be injected here -->
+          </div>
+          
+          <button id="rightScroll" class="scroll-btn">&#10095;</button>
+        </div>
+      </section>
+      
+      
+      <script src="scripts.js" defer></script>
+
+    <section id="portfolio" class="section">
+      <h2>Portfolio</h2>
+      <p>Here are some projects I've worked on:</p>
+      <ul>
+        <li>Sentiment Analysis Pipeline</li>
+        <li>Housing Price Predictor</li>
+        <li>Personal Portfolio Website</li>
+      </ul>
+    </section>
+    <script src="scripts.js" defer></script>
+    <section id="skills" class="section">
+      <h2>Skills</h2>
+      <ul class="skills-list">
+        <li>Python</li>
+        <li>JavaScript</li>
+        <li>React</li>
+        <li>AWS</li>
+        <li>SQL</li>
+      </ul>
+    </section>
+
+    <section id="contact" class="section">
+      <h2>Contact Me</h2>
+      <p>Email: yourname@example.com</p>
+      <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank">yourprofile</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Your Name. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
