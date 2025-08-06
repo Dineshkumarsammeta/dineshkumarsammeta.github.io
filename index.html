@@ -50,8 +50,11 @@
       
           <!-- Delayed content -->
           <div class="intro-text delayed-content">
-            <p>Hi, I am Dinesh Kumar, a passionate developer and data enthusiast.</p>
-      
+            <p>Hi, I’m Dinesh Kumar
+
+              Versatile IT Professional | 
+              I’m an experienced IT specialist with a strong background in delivering secure, scalable, and user-focused IT solutions.</p>
+            
             <div class="buttons">
               <a href="#contact" class="btn btn-primary">Get in Touch</a>
               <a href="#portfolio" class="btn btn-secondary">View My Work</a>
@@ -59,17 +62,17 @@
       
             <div class="social-icons">
               <a href="https://linkedin.com/in/yourprofile" target="_blank" aria-label="LinkedIn">
-                <img src="linkedin-icon.svg" alt="LinkedIn" />
+                <img src="assets/linkedin_icon.png" alt="LinkedIn" />
               </a>
               <a href="https://github.com/yourusername" target="_blank" aria-label="GitHub">
-                <img src="github-icon.svg" alt="GitHub" />
+                <img src="assets/github.png" alt="GitHub" />
               </a>
             </div>
           </div>
       
           <!-- Profile Photo -->
           <div class="profile-photo delayed-content">
-            <img src="about-pic.png" alt="Your Name" />
+            <img src="assets/about-pic.png" alt="Your Name" />
           </div>
         </div>
       </section>
@@ -81,13 +84,21 @@
         <div class="about-container">
           <!-- Photo -->
           <div class="about-photo">
-            <img src="about-pic.png" alt="Profile Photo">
+            <img src="assets/about-pic.png" alt="Profile Photo">
           </div>
       
           <!-- Description -->
           <div class="about-description">
-            <h2>About Me</h2>
-            <p>I build modern full-stack applications with a focus on clean design and data-driven solutions. I'm passionate about technology, problem-solving, and lifelong learning.</p>
+            <h2><span class="hover-underline">About Me</span></h2>
+            <p>
+              I'm Sammeta Dinesh Kumar, a data engineer with 2+ years of experience designing scalable data pipelines, real-time systems, and cloud-native solutions. I hold an MSc in Advanced Computer Science from the University of Leicester and a B.Tech from VIT University.
+            </p>
+            <p>
+              I work with tools like Apache Spark, Airflow, AWS, and Azure, and code in Python, SQL, and Bash. My interests lie in building data products that combine clean engineering with smart analytics—recently, that’s included a real-time sentiment analyzer and a housing price predictor.
+            </p>
+            <p>
+              Outside of work, I enjoy exploring new tech, automating things for fun, and diving deep into machine learning, LLMs, and cloud architecture. I'm currently based in the UK and open to opportunities that solve real-world problems through data.
+            </p>  
           </div>
         </div>
       
@@ -244,37 +255,217 @@
       
       <script src="scripts.js" defer></script>
 
-    <section id="portfolio" class="section">
-      <h2>Portfolio</h2>
-      <p>Here are some projects I've worked on:</p>
-      <ul>
-        <li>Sentiment Analysis Pipeline</li>
-        <li>Housing Price Predictor</li>
-        <li>Personal Portfolio Website</li>
-      </ul>
-    </section>
-    <script src="scripts.js" defer></script>
-    <section id="skills" class="section">
-      <h2>Skills</h2>
-      <ul class="skills-list">
-        <li>Python</li>
-        <li>JavaScript</li>
-        <li>React</li>
-        <li>AWS</li>
-        <li>SQL</li>
-      </ul>
-    </section>
+      <section id="portfolio" class="portfolio-section">
+        <h2>Portfolio</h2>
+      
+        <h3 class="sub-title">Education</h3>
+        <div class="timeline">
+          <!-- University 1 -->
+          <div class="timeline-item">
+            <div class="timeline-icon">
+              <img src="icons/university1.png" alt="University Icon" />
+            </div>
+            <div class="timeline-content">
+              <div class="edu-header">
+                <div class="edu-logo">
+                  <img src="icons/university1-logo.png" alt="Logo" />
+                </div>
+                <div class="edu-info">
+                  <h4>University of Leicester</h4>
+                  <p>Leicester, United Kingdom</p>
+                  <span>2022 – 2024</span>
+                </div>
+              </div>
+              <p class="edu-description">
+                Completed MSc in Advanced Computer Science. Focused on data engineering, big data, and cloud technologies. Worked on real-time streaming and analytics pipelines.
+              </p>
+            </div>
+          </div>
+      
+          <!-- University 2 -->
+          <div class="timeline-item">
+            <div class="timeline-icon">
+              <img src="icons/university2.png" alt="University Icon" />
+            </div>
+            <div class="timeline-content">
+              <div class="edu-header">
+                <div class="edu-logo">
+                  <img src="icons/university2-logo.png" alt="Logo" />
+                </div>
+                <div class="edu-info">
+                  <h4>VIT University</h4>
+                  <p>Vellore, India</p>
+                  <span>2010 – 2014</span>
+                </div>
+              </div>
+              <p class="edu-description">
+                Earned a Bachelor's degree in Electrical and Electronics Engineering. Gained foundational skills in programming, systems, and analytics.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
 
-    <section id="contact" class="section">
-      <h2>Contact Me</h2>
-      <p>Email: yourname@example.com</p>
-      <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank">yourprofile</a></p>
-    </section>
+      <section id="certification" class="certification-section">
+        <h2 class="section-title">Certifications</h2>
+      
+        <div class="cert-scroll-wrapper">
+          <button class="scroll-btn left" onclick="scrollCerts('left')">&#10094;</button>
+      
+          <div class="cert-card-container" id="cert-card-container">
+            <!-- Certificate Card 1 -->
+            <div class="cert-card">
+              <div class="cert-icon">🎓</div>
+              <h3>Data Analytics</h3>
+              <h4>Google</h4>
+              <p class="cert-date">Issued: Jan 2024</p>
+              <p>Gained hands-on experience in data cleaning, analysis, and visualization using SQL and Python.</p>
+              <a href="#" target="_blank" class="verify-link">Verify Certificate</a>
+            </div>
+      
+            <!-- Certificate Card 2 -->
+            <div class="cert-card">
+              <div class="cert-icon">💻</div>
+              <h3>Full Stack Web Dev</h3>
+              <h4>freeCodeCamp</h4>
+              <p class="cert-date">Issued: Mar 2024</p>
+              <p>Built full-stack web apps with Node.js, Express, MongoDB, and React.</p>
+              <a href="#" target="_blank" class="verify-link">Verify Certificate</a>
+            </div>
+      
+            <!-- Certificate Card 3 -->
+            <div class="cert-card">
+              <div class="cert-icon">📊</div>
+              <h3>Excel for Business</h3>
+              <h4>Coursera</h4>
+              <p class="cert-date">Issued: May 2024</p>
+              <p>Learned advanced Excel techniques for data modeling and automation.</p>
+              <a href="#" target="_blank" class="verify-link">Verify Certificate</a>
+            </div>
+      
+            <!-- Certificate Card 4 -->
+            <div class="cert-card">
+              <div class="cert-icon">☁️</div>
+              <h3>AWS Cloud Practitioner</h3>
+              <h4>Amazon</h4>
+              <p class="cert-date">Issued: June 2024</p>
+              <p>Understood AWS cloud concepts and best practices for cloud architecture.</p>
+              <a href="#" target="_blank" class="verify-link">Verify Certificate</a>
+            </div>
+      
+            <!-- Certificate Card 5 -->
+            <div class="cert-card">
+              <div class="cert-icon">🔐</div>
+              <h3>Cybersecurity Basics</h3>
+              <h4>IBM SkillsBuild</h4>
+              <p class="cert-date">Issued: July 2024</p>
+              <p>Covered essential topics in cybersecurity including threats, tools, and networks.</p>
+              <a href="#" target="_blank" class="verify-link">Verify Certificate</a>
+            </div>
+          </div>
+      
+          <button class="scroll-btn right" onclick="scrollCerts('right')">&#10095;</button>
+        </div>
+      </section>
+      
+      <section id="skills" class="section skills-section">
+        <h2>Skills</h2>
+      
+        <!-- Color Legend -->
+        <div class="skill-legend">
+          <span class="legend-box proficient"></span> Proficient
+          <span class="legend-box intermediate"></span> Intermediate
+          <span class="legend-box exploring"></span> Exploring
+          <span class="legend-box familiar"></span> Familiar
+        </div>
+      
+        <!-- Skill Categories -->
+        <div class="skills-grid">
+          
+          <!-- Proficient -->
+          <div class="skill-card">
+            <div class="skill-header proficient">
+              <span class="skill-icon">✅</span>
+              <h3>Proficient</h3>
+            </div>
+            <div class="skill-list">
+              <span class="skill-box">Python</span>
+              <span class="skill-box">SQL</span>
+            </div>
+          </div>
+      
+          <!-- Intermediate -->
+          <div class="skill-card">
+            <div class="skill-header intermediate">
+              <span class="skill-icon">🔄</span>
+              <h3>Intermediate</h3>
+            </div>
+            <div class="skill-list">
+              <span class="skill-box">JavaScript</span>
+              <span class="skill-box">React</span>
+            </div>
+          </div>
+      
+          <!-- Exploring -->
+          <div class="skill-card">
+            <div class="skill-header exploring">
+              <span class="skill-icon">🚀</span>
+              <h3>Exploring</h3>
+            </div>
+            <div class="skill-list">
+              <span class="skill-box">Docker</span>
+              <span class="skill-box">Kafka</span>
+            </div>
+          </div>
+      
+          <!-- Familiar -->
+          <div class="skill-card">
+            <div class="skill-header familiar">
+              <span class="skill-icon">👀</span>
+              <h3>Familiar</h3>
+            </div>
+            <div class="skill-list">
+              <span class="skill-box">AWS</span>
+              <span class="skill-box">GraphQL</span>
+            </div>
+          </div>
+      
+        </div>
+      </section>
+      
+
+      <section id="contact" class="contact-section">
+        <h2>Contact Me</h2>
+        <form action="https://formspree.io/f/yourFormID" method="POST" class="contact-form">
+          <label for="name">Name:</label>
+          <input type="text" name="name" id="name" required />
+      
+          <label for="email">Email:</label>
+          <input type="email" name="email" id="email" required />
+      
+          <label for="message">Message:</label>
+          <textarea name="message" id="message" rows="5" required></textarea>
+      
+          <button type="submit">Send Message</button>
+        </form>
+      </section>
+      
   </main>
 
   <footer>
     <p>© 2025 Your Name. All rights reserved.</p>
   </footer>
-
+  <script>
+    function scrollCerts(direction) {
+      const container = document.getElementById('cert-card-container');
+      const scrollAmount = 320; // Adjust based on card width + margin
+  
+      if (direction === 'left') {
+        container.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+      } else {
+        container.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+      }
+    }
+  </script>
 </body>
 </html>
