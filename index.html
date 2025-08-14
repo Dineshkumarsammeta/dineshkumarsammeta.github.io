@@ -4,19 +4,22 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>My Portfolio</title>
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles1.css" />
   <link
   rel="stylesheet"
   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
   crossorigin="anonymous"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+  
+
 
 </head>
 <body>
 
     <header>
         <nav class="navbar">
-          <div class="logo">MyPortfolio</div>
+          <div class="logo"></div>
           <ul class="nav-links">
             <li><a href="#home" class="active">Home</a></li>
             <li><a href="#about">About</a></li>
@@ -43,18 +46,20 @@
 
   <main>
     <section id="home" class="section home-section">
+      <video autoplay muted loop id="bg-video">
+        <source src="assets/background.mp4" type="video/mp4" />
+        Your browser does not support HTML5 video.
+      </video>
         <div class="home-content">
+          
+          
+      
+          <!-- Center: Intro Text -->
           <div class="intro-text">
             <h1>Hey, there <span class="wave">👋</span></h1>
-          </div>
+            <h1>I’m <strong>Dinesh Kumar</strong></h1>
+            <p class="tagline">Data Engineer | AWS | Python | Big Data</p>
       
-          <!-- Delayed content -->
-          <div class="intro-text delayed-content">
-            <p>Hi, I’m Dinesh Kumar
-
-              Versatile IT Professional | 
-              I’m an experienced IT specialist with a strong background in delivering secure, scalable, and user-focused IT solutions.</p>
-            
             <div class="buttons">
               <a href="#contact" class="btn btn-primary">Get in Touch</a>
               <a href="#portfolio" class="btn btn-secondary">View My Work</a>
@@ -69,13 +74,10 @@
               </a>
             </div>
           </div>
-      
-          <!-- Profile Photo -->
-          <div class="profile-photo delayed-content">
-            <img src="assets/about-pic.png" alt="Your Name" />
-          </div>
         </div>
       </section>
+      
+      
       
 
       
@@ -105,29 +107,37 @@
         <!-- Skill Cards -->
         <div class="skills-grid">
           <div class="skill-card">
-            <div class="icon">🧠</div>
+            <div class="icon">
+                <img src="assets/data.png" alt="data Icon" />
+              </div>
             <h3>Data Analysis</h3>
             <p>Skilled in analyzing complex datasets to derive actionable insights using Python and SQL.</p>
           </div>
           <div class="skill-card">
-            <div class="icon">🛠️</div>
+            <div class="icon">
+                <img src="assets/ps.png" alt="data Icon" />
+              </div>
             <h3>Problem Solver</h3>
             <p>Enjoy solving challenging technical problems with clean, efficient, and scalable code.</p>
           </div>
           <div class="skill-card">
-            <div class="icon">🌐</div>
+            <div class="icon">
+                <img src="assets/te.png" alt="data Icon" />
+              </div>
             <h3>Tech Explorer</h3>
             <p>Continuously exploring new technologies like Kafka, BigQuery, and Graph Databases.</p>
           </div>
           <div class="skill-card">
-            <div class="icon">⚙️</div>
+            <div class="icon">
+                <img src="assets/sd.png" alt="data Icon" />
+              </div>
             <h3>Full-Stack Dev</h3>
             <p>Experienced in building responsive web apps using React, Node.js, and REST APIs.</p>
           </div>
         </div>
       </section>
       
-      <section id="resume" class="resume-section">
+      <section id="resume" class="section resume-section">
         <h2>Resume</h2>
         <p>You can preview or download my resume below to learn more about my qualifications, experience, and technical skills.</p>
       
@@ -141,27 +151,27 @@
         </div>
       </section>
       
-      <section id="experience" class="experience-section">
+      <section id="experience" class="section experience-section">
         <h2>Experience</h2>
       
         <div class="timeline">
           <!-- Timeline Item 5 -->
+          
           <div class="timeline-item">
             <div class="timeline-icon">
               <i class="fas fa-briefcase"></i>
             </div>
             <div class="timeline-content">
               <div class="company-header">
-                <img src="logo5.png" alt="Company 5 Logo" class="company-logo" />
-                <div>
-                  <h3>Company Five</h3>
-                  <p class="meta">Jan 2023 – Present | London, UK</p>
+                <img src="assets/wipro.png" alt="Company 3 Logo" class="company-logo" />
+                <div class="company-header1">
+                  <h3>Wipro Technologies</h3>
+                  <p class="meta">Aug 2014 – Jul 2016 | Hyderabad, India</p>
                 </div>
               </div>
-              <p>Leading data engineering initiatives and managing cloud infrastructure for scalable pipelines.</p>
+              <p>End-to-End ETL Development & Optimization for High-Volume Data Pipelines.</p>
             </div>
           </div>
-      
           <!-- Timeline Item 4 -->
           <div class="timeline-item">
             <div class="timeline-icon">
@@ -169,85 +179,69 @@
             </div>
             <div class="timeline-content">
               <div class="company-header">
-                <img src="logo4.png" alt="Company 4 Logo" class="company-logo" />
-                <div>
-                  <h3>Company Four</h3>
-                  <p class="meta">Aug 2021 – Dec 2022 | Manchester, UK</p>
+                <img src="assets/insta.png" alt="Company 4 Logo" class="company-logo" />
+                <div class="company-header1">
+                  <h3>Insta TBS</h3>
+                  <p class="meta">Aug 2020 – Sep 2022 | Manchester, UK</p>
                 </div>
               </div>
-              <p>Worked as a full-stack developer building modern web applications using React and Node.js.</p>
+              <p>Scalable SSIS ETL Architecture & Data Integration for High-Volume Analytics.</p>
             </div>
           </div>
       
           <!-- Timeline Item 3 -->
+          
           <div class="timeline-item">
             <div class="timeline-icon">
               <i class="fas fa-briefcase"></i>
             </div>
             <div class="timeline-content">
               <div class="company-header">
-                <img src="logo3.png" alt="Company 3 Logo" class="company-logo" />
-                <div>
-                  <h3>Company Three</h3>
-                  <p class="meta">Jan 2020 – Jul 2021 | Birmingham, UK</p>
+                <img src="assets/social.png" alt="Company 5 Logo" class="company-logo" />
+                <div class="company-header1">
+                  <h3>Amazon</h3>
+                  <p class="meta">July 2024 – Present | Manfield, UK</p>
                 </div>
               </div>
-              <p>Improved database performance and built custom ETL pipelines for business intelligence solutions.</p>
+              <p>ICQA Specialist Driving Inventory Accuracy, Process Optimization, and Compliance Through Data-Driven Analysis and Cross-Functional Collaboration.</p>
             </div>
           </div>
-      
-          <!-- Timeline Item 2 -->
-          <div class="timeline-item">
-            <div class="timeline-icon">
-              <i class="fas fa-briefcase"></i>
-            </div>
-            <div class="timeline-content">
-              <div class="company-header">
-                <img src="logo2.png" alt="Company 2 Logo" class="company-logo" />
-                <div>
-                  <h3>Company Two</h3>
-                  <p class="meta">May 2018 – Dec 2019 | Hyderabad, India</p>
-                </div>
-              </div>
-              <p>Supported SAP security operations and ensured compliance with enterprise IT policies.</p>
-            </div>
           </div>
-      
-          <!-- Timeline Item 1 -->
-          <div class="timeline-item">
-            <div class="timeline-icon">
-              <i class="fas fa-briefcase"></i>
-            </div>
-            <div class="timeline-content">
-              <div class="company-header">
-                <img src="logo1.png" alt="Company 1 Logo" class="company-logo" />
-                <div>
-                  <h3>Company One</h3>
-                  <p class="meta">Jul 2014 – Apr 2018 | Chennai, India</p>
-                </div>
-              </div>
-              <p>Started as a junior developer and contributed to internal tools for automation and monitoring.</p>
-            </div>
-          </div>
-        </div>
       </section>
       
-      <section id="projects" class="projects-section">
+      <section id="projects" class="section projects-section">
         <h1>Projects</h1>
-        
+      
+        <!-- Filter buttons floating on top -->
         <div class="filter-buttons">
           <button class="filter-btn active" data-filter="all">All Projects</button>
           <button class="filter-btn" data-filter="data-science">Data Science Projects</button>
           <button class="filter-btn" data-filter="electrical">Electrical Projects</button>
         </div>
       
+        <!-- Carousel wrapper -->
         <div class="carousel-wrapper">
           <button id="leftScroll" class="scroll-btn">&#10094;</button>
-          
+      
           <div class="carousel-container" id="carouselContainer">
-            <!-- Project cards will be injected here -->
+            <div class="project-card">
+              <h3>Project 1</h3>
+              <p>Short description of Project 1.</p>
+            </div>
+            <div class="project-card">
+              <h3>Project 2</h3>
+              <p>Short description of Project 2.</p>
+            </div>
+            <div class="project-card">
+              <h3>Project 3</h3>
+              <p>Short description of Project 3.</p>
+            </div>
+            <div class="project-card">
+              <h3>Project 4</h3>
+              <p>Short description of Project 4.</p>
+            </div>
           </div>
-          
+      
           <button id="rightScroll" class="scroll-btn">&#10095;</button>
         </div>
       </section>
@@ -255,7 +249,7 @@
       
       <script src="scripts.js" defer></script>
 
-      <section id="portfolio" class="portfolio-section">
+      <section id="portfolio" class="section portfolio-section">
         <h2>Portfolio</h2>
       
         <h3 class="sub-title">Education</h3>
@@ -263,12 +257,12 @@
           <!-- University 1 -->
           <div class="timeline-item">
             <div class="timeline-icon">
-              <img src="icons/university1.png" alt="University Icon" />
+              <i class="fas fa-briefcase"></i>
             </div>
             <div class="timeline-content">
               <div class="edu-header">
                 <div class="edu-logo">
-                  <img src="icons/university1-logo.png" alt="Logo" />
+                  <img src="assets/uol.png" alt="Logo" />
                 </div>
                 <div class="edu-info">
                   <h4>University of Leicester</h4>
@@ -277,7 +271,7 @@
                 </div>
               </div>
               <p class="edu-description">
-                Completed MSc in Advanced Computer Science. Focused on data engineering, big data, and cloud technologies. Worked on real-time streaming and analytics pipelines.
+                Acquired a master's degree in advanced computer science. Focused on Cloud, Big data, and Data Engineering technologies. worked on pipelines for analytics and real-time streaming.
               </p>
             </div>
           </div>
@@ -285,12 +279,12 @@
           <!-- University 2 -->
           <div class="timeline-item">
             <div class="timeline-icon">
-              <img src="icons/university2.png" alt="University Icon" />
+              <i class="fas fa-briefcase"></i>
             </div>
             <div class="timeline-content">
               <div class="edu-header">
                 <div class="edu-logo">
-                  <img src="icons/university2-logo.png" alt="Logo" />
+                  <img src="assets/vit.png" alt="Logo" />
                 </div>
                 <div class="edu-info">
                   <h4>VIT University</h4>
@@ -299,14 +293,15 @@
                 </div>
               </div>
               <p class="edu-description">
-                Earned a Bachelor's degree in Electrical and Electronics Engineering. Gained foundational skills in programming, systems, and analytics.
+                Achieved an Electrical and Electronics Engineering Bachelor's Degree. acquired Fundamental knowledge of Power Systems, Analytics, and Programming.
+   
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      <section id="certification" class="certification-section">
+      <section id="certification" class="section certification-section">
         <h2 class="section-title">Certifications</h2>
       
         <div class="cert-scroll-wrapper">
@@ -367,88 +362,133 @@
           <button class="scroll-btn right" onclick="scrollCerts('right')">&#10095;</button>
         </div>
       </section>
+      <section id="skills" class="skills-section">
+        <!-- Section Heading -->
+        <h2 class="skills-section-heading">My Skill Book</h2>
       
-      <section id="skills" class="section skills-section">
-        <h2>Skills</h2>
+        <!-- Skills Container -->
+        <div class="skills-container">
       
-        <!-- Color Legend -->
-        <div class="skill-legend">
-          <span class="legend-box proficient"></span> Proficient
-          <span class="legend-box intermediate"></span> Intermediate
-          <span class="legend-box exploring"></span> Exploring
-          <span class="legend-box familiar"></span> Familiar
-        </div>
-      
-        <!-- Skill Categories -->
-        <div class="skills-grid">
-          
-          <!-- Proficient -->
-          <div class="skill-card">
-            <div class="skill-header proficient">
-              <span class="skill-icon">✅</span>
-              <h3>Proficient</h3>
+          <!-- Programming & Scripting -->
+          <div class="skill-category">
+            <h3>Programming & Scripting</h3>
+            <div class="skill-card intermediate" data-progress="85%">
+              <span class="skill-name">Python (Pandas, NumPy, Matplotlib, Seaborn, Plotly/Dash)</span>
+              <div class="progress-bar"><div class="progress"></div></div>
             </div>
-            <div class="skill-list">
-              <span class="skill-box">Python</span>
-              <span class="skill-box">SQL</span>
+            <div class="skill-card intermediate" data-progress="80%">
+              <span class="skill-name">T-SQL (Stored Procedures, Views, Query Optimisation, Indexing, Partitioning)</span>
+              <div class="progress-bar"><div class="progress"></div></div>
+            </div>
+            <div class="skill-card basic" data-progress="65%">
+              <span class="skill-name">Bash Scripting</span>
+              <div class="progress-bar"><div class="progress"></div></div>
+            </div>
+            <div class="skill-card basic" data-progress="60%">
+              <span class="skill-name">Java</span>
+              <div class="progress-bar"><div class="progress"></div></div>
             </div>
           </div>
       
-          <!-- Intermediate -->
-          <div class="skill-card">
-            <div class="skill-header intermediate">
-              <span class="skill-icon">🔄</span>
-              <h3>Intermediate</h3>
+          <!-- Data Engineering & ETL Development -->
+          <div class="skill-category">
+            <h3>Data Engineering & ETL Development</h3>
+            <div class="skill-card intermediate" data-progress="85%">
+              <span class="skill-name">SSIS – ETL pipeline design, incremental loads, CDC</span>
+              <div class="progress-bar"><div class="progress"></div></div>
             </div>
-            <div class="skill-list">
-              <span class="skill-box">JavaScript</span>
-              <span class="skill-box">React</span>
+            <div class="skill-card intermediate" data-progress="80%">
+              <span class="skill-name">Apache Airflow (Workflow Orchestration)</span>
+              <div class="progress-bar"><div class="progress"></div></div>
             </div>
-          </div>
-      
-          <!-- Exploring -->
-          <div class="skill-card">
-            <div class="skill-header exploring">
-              <span class="skill-icon">🚀</span>
-              <h3>Exploring</h3>
-            </div>
-            <div class="skill-list">
-              <span class="skill-box">Docker</span>
-              <span class="skill-box">Kafka</span>
+            <div class="skill-card basic" data-progress="70%">
+              <span class="skill-name">Azure Data Factory, Azure Synapse, AWS Glue, Databricks</span>
+              <div class="progress-bar"><div class="progress"></div></div>
             </div>
           </div>
       
-          <!-- Familiar -->
-          <div class="skill-card">
-            <div class="skill-header familiar">
-              <span class="skill-icon">👀</span>
-              <h3>Familiar</h3>
+          <!-- Databases & Storage -->
+          <div class="skill-category">
+            <h3>Databases & Storage</h3>
+            <div class="skill-card intermediate" data-progress="85%">
+              <span class="skill-name">SQL Server Administration</span>
+              <div class="progress-bar"><div class="progress"></div></div>
             </div>
-            <div class="skill-list">
-              <span class="skill-box">AWS</span>
-              <span class="skill-box">GraphQL</span>
+            <div class="skill-card intermediate" data-progress="80%">
+              <span class="skill-name">PostgreSQL, MySQL</span>
+              <div class="progress-bar"><div class="progress"></div></div>
+            </div>
+            <div class="skill-card basic" data-progress="65%">
+              <span class="skill-name">MongoDB</span>
+              <div class="progress-bar"><div class="progress"></div></div>
             </div>
           </div>
       
-        </div>
+          <!-- Business Intelligence & Reporting -->
+          <div class="skill-category">
+            <h3>Business Intelligence & Reporting</h3>
+            <div class="skill-card intermediate" data-progress="80%">
+              <span class="skill-name">Power BI, Google Data Studio</span>
+              <div class="progress-bar"><div class="progress"></div></div>
+            </div>
+            <div class="skill-card intermediate" data-progress="75%">
+              <span class="skill-name">SQL Server Reporting Services (SSRS)</span>
+              <div class="progress-bar"><div class="progress"></div></div>
+            </div>
+          </div>
+      
+          <!-- Machine Learning -->
+          <div class="skill-category">
+            <h3>Machine Learning</h3>
+            <div class="skill-card basic" data-progress="65%">
+              <span class="skill-name">Scikit-learn, TensorFlow (Basic)</span>
+              <div class="progress-bar"><div class="progress"></div></div>
+            </div>
+            <div class="skill-card basic" data-progress="60%">
+              <span class="skill-name">Deep Learning (LSTM, CNN – Conceptual)</span>
+              <div class="progress-bar"><div class="progress"></div></div>
+            </div>
+          </div>
+      
+          <!-- Cloud & Containerisation -->
+          <div class="skill-category">
+            <h3>Cloud & Containerisation</h3>
+            <div class="skill-card intermediate" data-progress="80%">
+              <span class="skill-name">AWS (S3, EMR, Kinesis, Lambda, Glue, Redshift)</span>
+              <div class="progress-bar"><div class="progress"></div></div>
+            </div>
+            <div class="skill-card intermediate" data-progress="75%">
+              <span class="skill-name">Azure (Data Factory, Synapse, Blob Storage)</span>
+              <div class="progress-bar"><div class="progress"></div></div>
+            </div>
+            <div class="skill-card basic" data-progress="65%">
+              <span class="skill-name">Docker (Containerised ETL Jobs)</span>
+              <div class="progress-bar"><div class="progress"></div></div>
+            </div>
+          </div>
+      
+        </div> <!-- End of Skills Container -->
       </section>
       
-
-      <section id="contact" class="contact-section">
+            
+      
+      <section id="contact" class="section contact-section">
         <h2>Contact Me</h2>
         <form action="https://formspree.io/f/yourFormID" method="POST" class="contact-form">
+          
           <label for="name">Name:</label>
-          <input type="text" name="name" id="name" required />
-      
+          <input type="text" name="name" id="name" placeholder="Enter your full name" required />
+          
           <label for="email">Email:</label>
-          <input type="email" name="email" id="email" required />
-      
+          <input type="email" name="email" id="email" placeholder="Enter your email address" required />
+          
           <label for="message">Message:</label>
-          <textarea name="message" id="message" rows="5" required></textarea>
-      
+          <textarea name="message" id="message" rows="5" placeholder="Type your message here..." required></textarea>
+          
           <button type="submit">Send Message</button>
         </form>
       </section>
+      
       
   </main>
 
@@ -466,6 +506,24 @@
         container.scrollBy({ left: scrollAmount, behavior: 'smooth' });
       }
     }
+    
   </script>
+  <script>
+    document.querySelectorAll('.skill-card').forEach(card => {
+      const progress = card.querySelector('.progress');
+      const value = card.getAttribute('data-progress');
+  
+      card.addEventListener('mouseenter', () => {
+        progress.style.width = value;
+      });
+  
+      card.addEventListener('mouseleave', () => {
+        progress.style.width = '0';
+      });
+    });
+    
+  </script>
+  
+  
 </body>
 </html>
