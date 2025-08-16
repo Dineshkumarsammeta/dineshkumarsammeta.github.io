@@ -18,7 +18,6 @@ const carousel = document.getElementById('carouselContainer');
       behavior: 'smooth'
     });
   });
-
   // Optional: Active filter buttons (basic show/hide functionality)
   const filterButtons = document.querySelectorAll('.filter-btn');
   const projectCards = document.querySelectorAll('.project-card');
