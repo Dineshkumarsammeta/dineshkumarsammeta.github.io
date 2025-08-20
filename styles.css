@@ -1239,6 +1239,7 @@ body {
   position: relative;
   padding: 60px 20px;
   max-width: 100%;
+  text-align: center;
   
 
   /* Background image */
@@ -1262,11 +1263,46 @@ body {
 
 /* ===== Headings ===== */
 .portfolio-section h2 {
+  
+  
+  
   text-align: center;
-  font-size: 2.8rem;
+  
+}
+/* Modern heading style */
+.portfolio-heading {
+  font-family: 'Poppins', 'Helvetica', sans-serif; /* clean modern font */
+  font-size: 2.5rem;
+  
   margin-bottom: 15px;
-  font-weight: 700;
+  font-weight: 600;
+  color: #000000; /* or your theme color */
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  transition: color 0.3s;
   letter-spacing: 1px;
+}
+
+/* Underline effect */
+.portfolio-heading::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 3px; /* thickness of the underline */
+  left: 0;
+  bottom: -5px; /* spacing from text */
+  background: #000000; /* underline color */
+  transition: width 0.3s ease;
+}
+
+/* Hover effect */
+.portfolio-heading:hover::after {
+  width: 100%;
+}
+
+/* Optional hover color change */
+.portfolio-heading:hover {
   color: #000000;
 }
 
@@ -1274,7 +1310,7 @@ body {
   text-align: center;
   font-size: 1.4rem;
   margin-bottom: 40px;
-  color: #ffd700;
+  color: #060504;
 }
 
 /* ===== Timeline Container ===== */
@@ -1369,13 +1405,13 @@ body {
 }
 
 /*certificates*/
-#certification {
+#certifications {
   position: relative;
   background: url('assets/background.png') center/cover no-repeat;
   color: white;
 }
 
-#certification::before {
+#certifications::before {
   content: "";
   position: absolute;
   top: 0; left: 0;
@@ -1384,120 +1420,124 @@ body {
   z-index: 0;
 }
 
-#certification .home-content {
+#certifications .home-content {
   position: relative;
   z-index: 1;
 }
-.certification-section {
-  
-    background-image: url('assets/backround.png'); /* Replace with your image path */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    padding: 60px 20px;
-    background-color: #f4f4f4;
-    text-align: center;
-    color: #000;
-  }
-  
-
-.section-title {
-  text-align: center;
-  margin-bottom: 30px;
-  font-size: 2rem;
-  color: #000;
-}
-
-.cert-scroll-wrapper {
+/* Section */
+.cert-section  {
   position: relative;
-  overflow: hidden;
+  padding: 80px 20px;
+  background: url('your-background.jpg') no-repeat center/cover;
+  color: #fff;
+  text-align: center;
 }
 
-.cert-card-container {
+
+/* Heading */
+.cert-heading {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.8rem;
+  font-weight: 600;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+/* Grid Layout */
+.cert-grid {
   display: flex;
+  justify-content: center;
   gap: 20px;
-  overflow-x: auto;
-  scroll-behavior: smooth;
-  padding: 20px 0;
+  flex-wrap: nowrap;        /* Keep all cards in one line */
+  overflow-x: auto;         /* Allow horizontal scroll on small screens */
+  padding: 40px 20px;
 }
 
 .cert-card {
-  flex: 0 0 300px;
-  background-color: #ffffff;
-  border-radius: 10px;
+  flex: 0 0 250px;                /* Fixed width for each card */
+  background: rgba(255, 255, 255, 0.1); /* Semi-transparent for floating effect */
+  backdrop-filter: blur(10px);    /* Background blur for frosted glass look */
+  border-radius: 15px;
   padding: 20px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
-  transition: transform 0.3s;
+  text-align: center;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.3); /* Floating shadow */
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .cert-card:hover {
-  transform: translateY(-5px);
-}
-
-.cert-icon {
-  font-size: 2.5rem;
-  margin-bottom: 10px;
-  text-align: center;
-}
-
-.cert-card h3 {
-  font-size: 1.2rem;
-  margin: 10px 0 5px;
-  text-align: center;
-}
-
-.cert-card h4 {
-  font-size: 1rem;
-  color: #666;
-  text-align: center;
-  margin-bottom: 10px;
-}
-
-.cert-date {
-  font-size: 0.9rem;
-  color: #000000;
-  text-align: center;
-  margin-bottom: 10px;
-}
-
-.cert-card p {
-  font-size: 0.95rem;
-  text-align: center;
-  margin-bottom: 12px;
+  transform: translateY(-10px);
+  box-shadow: 0 25px 50px rgba(0,0,0,0.4); /* Enhanced lift on hover */
 }
 
 .verify-link {
-  display: block;
-  text-align: center;
-  color: #000000;
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 15px;
+  background-color: #fff;
+  color: #000;
+  border-radius: 8px;
   text-decoration: none;
   font-weight: bold;
+  transition: background 0.3s, color 0.3s;
 }
 
 .verify-link:hover {
-  text-decoration: underline;
-}
-
-.scroll-btn {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: #020202;
+  background-color: #000;
   color: #fff;
-  border: none;
-  padding: 10px 14px;
-  border-radius: 50%;
-  cursor: pointer;
-  z-index: 1;
 }
 
-.scroll-btn.left {
-  left: 0;
+
+/* Certificate Icon */
+.cert-icon {
+  font-size: 3rem;
+  margin-bottom: 15px;
 }
 
-.scroll-btn.right {
-  right: 0;
+/* Card Title & Sub */
+.cert-card-item h3 {
+  font-size: 1.5rem;
+  margin-bottom: 5px;
 }
+
+.cert-card-item h4 {
+  font-size: 1.1rem;
+  font-weight: 400;
+  margin-bottom: 10px;
+  color: #aaa;
+}
+
+/* Date */
+.cert-date {
+  font-size: 0.85rem;
+  color: #ccc;
+  margin-bottom: 15px;
+}
+
+/* Description */
+.cert-card p {
+  font-size: 0.85rem;       /* Smaller, readable text */
+  font-weight: 300;         /* Thinner font weight */
+  line-height: 1.4;         /* More spacing between lines */
+  color: #fff;              /* Light color for contrast on dark/floating background */
+  margin: 8px 0;            /* Reduce vertical spacing */
+  text-align: center;       /* Keep text centered */
+}
+/* Verify Button */
+.cert-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 50px;
+  background: #000000;
+  color: #fff;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.cert-btn:hover {
+  background: #ff6b81;
+}
+
 /*skills*/
 #skills {
   position: relative;
@@ -1614,6 +1654,7 @@ body {
 
 .contact-section {
   background: rgba(0, 0, 0, 0.3); /* 0.3 = 30% opacity */
+  text-align: center;
 }
 /* Left Form */
 
