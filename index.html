@@ -4,13 +4,16 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>My Portfolio</title>
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles1.css" />
   <link
   rel="stylesheet"
   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
   crossorigin="anonymous"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+  
+
+
 </head>
 <body>
 
@@ -39,6 +42,8 @@
           </ul>
         </nav>
       </header>
+      
+
   <main>
     <section id="home" class="section home-section">
       <video autoplay muted loop id="bg-video">
@@ -46,6 +51,9 @@
         Your browser does not support HTML5 video.
       </video>
         <div class="home-content">
+          
+          
+      
           <!-- Center: Intro Text -->
           <div class="intro-text">
             <h1>Hey, there <span class="wave">👋</span></h1>
@@ -68,6 +76,11 @@
           </div>
         </div>
       </section>
+      
+      
+      
+
+      
       
       <section id="about" class="section about-section">
         <div class="about-container">
@@ -124,19 +137,19 @@
         </div>
       </section>
       
-      <section id="resume" class="section resume-section">
-        <h2>Resume</h2>
-        <p>You can preview or download my resume below to learn more about my qualifications, experience, and technical skills.</p>
-      
-        <div class="resume-buttons">
-          <a href="your-resume.pdf" target="_blank" class="btn resume-btn preview-btn">
-            <i class="fas fa-eye"></i> Preview Resume
-          </a>
-          <a href="your-resume.pdf" download class="btn resume-btn download-btn">
-            <i class="fas fa-download"></i> Download Resume
-          </a>
-        </div>
-      </section>
+        <section id="resume" class="section resume-section">
+          <h2>Resume</h2>
+          <p>You can preview or download my resume below to learn more about my qualifications, experience, and technical skills.</p>
+        
+          <div class="resume-buttons">
+            <a href="your-resume.pdf" target="_blank" class="btn resume-btn preview-btn">
+              <i class="fas fa-eye"></i> Preview Resume
+            </a>
+            <a href="your-resume.pdf" download class="btn resume-btn download-btn">
+              <i class="fas fa-download"></i> Download Resume
+            </a>
+          </div>
+        </section>
       
       <section id="experience" class="section experience-section">
         <h2>Experience</h2>
@@ -195,41 +208,110 @@
           </div>
           </div>
       </section>
-      
       <section id="projects" class="section projects-section">
         <h1>Projects</h1>
       
-        <!-- Filter buttons floating on top -->
-        <div class="filter-buttons">
-          <button class="filter-btn active" data-filter="all">All Projects</button>
-          <button class="filter-btn" data-filter="data-science">Data Science Projects</button>
-          <button class="filter-btn" data-filter="electrical">Electrical Projects</button>
-        </div>
-      
         <!-- Carousel wrapper -->
-        <div class="carousel-wrapper">
-          <button id="leftScroll" class="scroll-btn">&#10094;</button>
+        <div class="carousel-wrapper-full">
+          <button id="prevSlide" class="carousel-btn">&#10094;</button>
       
-          <div class="carousel-container" id="carouselContainer">
-            <div class="project-card">
-              <h3>Project 1</h3>
-              <p>Short description of Project 1.</p>
-            </div>
-            <div class="project-card">
-              <h3>Project 2</h3>
-              <p>Short description of Project 2.</p>
-            </div>
-            <div class="project-card">
-              <h3>Project 3</h3>
-              <p>Short description of Project 3.</p>
-            </div>
-            <div class="project-card">
-              <h3>Project 4</h3>
-              <p>Short description of Project 4.</p>
-            </div>
+          <div class="carousel-track-container">
+            <ul class="carousel-track">
+              <!-- Project Card 1 -->
+              <li class="carousel-slide">
+                <div class="project-card">
+                  <div class="project-image-wrapper">
+                    <img src="assets/senti.jpeg" alt="Project 1 Preview" class="project-image">
+                  </div>
+                  <h3>Business Insight Engine Project </h3>
+                  <p>Developed a full-stack, cloud-native Twitter sentiment analysis platform using Spark, Airflow, and AWS. Leveraged GPT-4 and deep learning models (LSTM, CNN) to achieve 92%+ accuracy, providing real-time insights via Flask API and React frontend with scalable, reliable, and cost-effective architecture.</p>
+                  <div class="tools-used">
+                    <span>Python</span><span>Scikit-learn</span><span>XGBoost</span><span>Matplotlib</span>
+                  </div>
+                  <a href="https://github.com/dineshsammeta1234/ML_model_predicting_house_prices2" target="_blank" class="project-btn">Explore on GitHub</a>
+                </div>
+              </li>
+              <!-- Project Card 2 -->
+              <li class="carousel-slide">
+                <div class="project-card">
+                  <div class="project-image-wrapper">
+                    <img src="assets/ukhousingp.jpeg" alt="Project 2 Preview" class="project-image">
+                  </div>
+                  <h3>ML model predicting house prices</h3>
+                  <p>Developed a data-driven house price prediction system for 15+ UK locations using Python, geospatial data, and 25,000+ property records. Applied EDA and machine learning models (Random Forest, XGBoost) achieving 90%+ R², providing actionable insights through interactive dashboards for investors and real estate professionals.</p>
+                  <div class="tools-used">
+                    <span>Arduino</span><span>MATLAB</span><span>Python</span><span>Excel</span>
+                  </div>
+                  <a href="#" target="_blank" class="project-btn">Explore on GitHub</a>
+                </div>
+              </li>
+              <li class="carousel-slide">
+                <div class="project-card">
+                  <div class="project-image-wrapper">
+                    <img src="assets/smartenergy.jpeg" alt="Project 3 Preview" class="project-image">
+                  </div>
+                  <h3>Smart Energy Monitoring System</h3>
+                  <p>Developed an IoT-based energy monitoring system for Indian hospitals using Arduino, CT sensors, and RS-485 connectivity. Analyzed real-time load data with MATLAB and Excel, modeled hospital energy usage patterns, and identified up to 15% potential energy savings through optimized scheduling.</p>
+                  <div class="tools-used">
+                    <span>Arduino</span><span>MATLAB</span><span>Python</span><span>Excel</span>
+                  </div>
+                  <a href="#" target="_blank" class="project-btn">Explore on GitHub</a>
+                </div>
+              </li>
+              <li class="carousel-slide">
+                <div class="project-card">
+                  <div class="project-image-wrapper">
+                    <img src="assets/laplace.jpeg" alt="Project 4 Preview" class="project-image">
+                  </div>
+                  <h3>Signal Analysis Using Fourier and Laplace Transforms</h3>
+                  <p>Developed a Python-based DSP framework using Fourier and Laplace transforms to denoise and analyse ECG/EEG signals from the MIT-BIH Arrhythmia database. Applied Butterworth filters and FFT to remove noise and extract frequency components, while Laplace transforms modeled system stability, producing clear visual dashboards for improved diagnostic readability.</p>
+                  <div class="tools-used">
+                    <span>Arduino</span><span>MATLAB</span><span>Python</span><span>Excel</span>
+                  </div>
+                  <a href="#" target="_blank" class="project-btn">Explore on GitHub</a>
+                </div>
+              </li>
+              <!-- Project Card 3 -->
+              <li class="carousel-slide">
+                <div class="project-card">
+                  <div class="project-image-wrapper">
+                    <img src="assets/feedback.jpeg" alt="Project 5 Preview" class="project-image">
+                  </div>
+                  <h3>Automated feedback sentiment analysis</h3>
+                  <p>Developed a Python-based Patient Feedback Sentiment Analysis system to automatically process and anonymize survey responses, classifying sentiments with NLP. Real-time Flask API and Matplotlib dashboards visualized trends, linking patient satisfaction to hospital services, reducing analyst workload, and providing actionable insights for scalable, reproducible operational improvements.</p>
+                  <div class="tools-used">
+                    <span>Arduino</span><span>Relay Modules</span><span>Solar Panels</span><span>Electrical Wiring</span>
+                  </div>
+                  <a href="#" target="_blank" class="project-btn">Explore on GitHub</a>
+                </div>
+              </li>
+              <!-- Project 6-->
+              <li class="carousel-slide">
+                <div class="project-card">
+                  <div class="project-image-wrapper">
+                    <img src="assets/solarenergy.jpeg" alt="Project 5 Preview" class="project-image">
+                  </div>
+                  <h3>Solar-Powered Home Automation with Load Management</h3>
+                  <p>Developed a solar-powered home automation system using Arduino/Raspberry Pi to prioritize essential loads based on solar energy availability. Implemented relay-based switching, sensor calibration, and energy monitoring to control fans, lights, and appliances. Produced a scalable prototype demonstrating over 20% energy savings, highlighting expertise in automation, renewable energy integration, and system optimization.</p>
+                  <div class="tools-used">
+                    <span>Arduino</span><span>Relay Modules</span><span>Solar Panels</span><span>Electrical Wiring</span>
+                  </div>
+                  <a href="#" target="_blank" class="project-btn">Explore on GitHub</a>
+                </div>
+              </li>
+              <!-- Add more slides as needed -->
+            </ul>
           </div>
       
-          <button id="rightScroll" class="scroll-btn">&#10095;</button>
+          <button id="nextSlide" class="carousel-btn">&#10095;</button>
+        </div>
+      
+        <!-- Dots navigation -->
+        <div class="carousel-dots">
+          <button class="dot active"></button>
+          <button class="dot"></button>
+          <button class="dot"></button>
+          <!-- Add more dots if more slides -->
         </div>
       </section>
       
@@ -348,132 +430,132 @@
           <button class="scroll-btn right" onclick="scrollCerts('right')">&#10095;</button>
         </div>
       </section>
-      <section id="skills" class="skills-section">
+      <section id="skills" class="skillbook-section">
         <!-- Section Heading -->
-        <h2 class="skills-section-heading">My Skill Book</h2>
+        <h2 class="skillbook-heading">My Skill Book</h2>
       
-        <!-- Skills Container -->
-        <div class="skills-container">
+        <!-- Floating Skills Grid Container -->
+        <div class="skillbook-floating-container">
       
-          <!-- Programming & Scripting -->
-          <div class="skill-category">
-            <h3>Programming & Scripting</h3>
-            <div class="skill-card intermediate" data-progress="85%">
-              <span class="skill-name">Python (Pandas, NumPy, Matplotlib, Seaborn, Plotly/Dash)</span>
-              <div class="progress-bar"><div class="progress"></div></div>
+          <div class="skillbook-grid">
+      
+            <!-- Programming & Scripting -->
+            <div class="skillbook-card">
+              <h3 class="skillbook-title">Programming & Scripting</h3>
+              <div class="skillbook-img-wrapper">
+                <img src="assets/prog.jpeg" alt="Programming Icon" class="skillbook-img">
+              </div>
             </div>
-            <div class="skill-card intermediate" data-progress="80%">
-              <span class="skill-name">T-SQL (Stored Procedures, Views, Query Optimisation, Indexing, Partitioning)</span>
-              <div class="progress-bar"><div class="progress"></div></div>
+      
+            <!-- Data Engineering & ETL -->
+            <div class="skillbook-card">
+              <h3 class="skillbook-title">Data Engineering & ETL</h3>
+              <div class="skillbook-img-wrapper">
+                <img src="assets/etl.jpeg" alt="ETL Icon" class="skillbook-img">
+              </div>
             </div>
-            <div class="skill-card basic" data-progress="65%">
-              <span class="skill-name">Bash Scripting</span>
-              <div class="progress-bar"><div class="progress"></div></div>
+      
+            <!-- Databases & Storage -->
+            <div class="skillbook-card">
+              <h3 class="skillbook-title">Databases & Storage</h3>
+              <div class="skillbook-img-wrapper">
+                <img src="assets/db.jpeg" alt="Database Icon" class="skillbook-img">
+              </div>
             </div>
-            <div class="skill-card basic" data-progress="60%">
-              <span class="skill-name">Java</span>
-              <div class="progress-bar"><div class="progress"></div></div>
+      
+            <!-- Business Intelligence -->
+            <div class="skillbook-card">
+              <h3 class="skillbook-title">Business Intelligence & Reporting</h3>
+              <div class="skillbook-img-wrapper">
+                <img src="assets/bi.jpeg" alt="BI Icon" class="skillbook-img">
+              </div>
             </div>
+      
+            <!-- Machine Learning -->
+            <div class="skillbook-card">
+              <h3 class="skillbook-title">Machine Learning</h3>
+              <div class="skillbook-img-wrapper">
+                <img src="assets/ml.jpeg" alt="ML Icon" class="skillbook-img">
+              </div>
+            </div>
+      
+            <!-- Cloud & Containerisation -->
+            <div class="skillbook-card">
+              <h3 class="skillbook-title">Cloud & Containerisation</h3>
+              <div class="skillbook-img-wrapper">
+                <img src="assets/candc.jpeg" alt="Cloud Icon" class="skillbook-img">
+              </div>
+            </div>
+      
+            <!-- IT Support -->
+            <div class="skillbook-card">
+              <h3 class="skillbook-title">IT Support</h3>
+              <div class="skillbook-img-wrapper">
+                <img src="assets/its.jpeg" alt="IT Support Icon" class="skillbook-img">
+              </div>
+            </div>
+      
+            <!-- Full Stack Developer -->
+            <div class="skillbook-card">
+              <h3 class="skillbook-title">Full Stack Developer</h3>
+              <div class="skillbook-img-wrapper">
+                <img src="assets/fsd.jpeg" alt="Full Stack Icon" class="skillbook-img">
+              </div>
+            </div>
+      
           </div>
       
-          <!-- Data Engineering & ETL Development -->
-          <div class="skill-category">
-            <h3>Data Engineering & ETL Development</h3>
-            <div class="skill-card intermediate" data-progress="85%">
-              <span class="skill-name">SSIS – ETL pipeline design, incremental loads, CDC</span>
-              <div class="progress-bar"><div class="progress"></div></div>
-            </div>
-            <div class="skill-card intermediate" data-progress="80%">
-              <span class="skill-name">Apache Airflow (Workflow Orchestration)</span>
-              <div class="progress-bar"><div class="progress"></div></div>
-            </div>
-            <div class="skill-card basic" data-progress="70%">
-              <span class="skill-name">Azure Data Factory, Azure Synapse, AWS Glue, Databricks</span>
-              <div class="progress-bar"><div class="progress"></div></div>
-            </div>
+          <!-- Explore More Button -->
+          <div class="skillbook-download">
+            <a href="assets/Your_Resume.pdf" download class="skillbook-btn">Explore More</a>
           </div>
       
-          <!-- Databases & Storage -->
-          <div class="skill-category">
-            <h3>Databases & Storage</h3>
-            <div class="skill-card intermediate" data-progress="85%">
-              <span class="skill-name">SQL Server Administration</span>
-              <div class="progress-bar"><div class="progress"></div></div>
+        </div>
+      </section>
+      <section id="contact" class="contact-section">
+        <h2 class="contact-heading">Contact Me</h2>
+      
+        <div class="contact-container">
+          <!-- Left: Contact Form -->
+          <form action="https://formspree.io/f/yourFormID" method="POST" class="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" placeholder="Enter your full name" required />
+      
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" placeholder="Enter your email address" required />
+      
+            <label for="message">Message:</label>
+            <textarea name="message" id="message" rows="5" placeholder="Type your message here..." required></textarea>
+      
+            <button type="submit">Send Message</button>
+          </form>
+      
+          <!-- Right: Contact Card -->
+          <div class="contact-card">
+            <!-- Avatar -->
+            <div class="avatar">
+              <img src="assets/getintouch.png" alt="Profile Avatar" />
             </div>
-            <div class="skill-card intermediate" data-progress="80%">
-              <span class="skill-name">PostgreSQL, MySQL</span>
-              <div class="progress-bar"><div class="progress"></div></div>
-            </div>
-            <div class="skill-card basic" data-progress="65%">
-              <span class="skill-name">MongoDB</span>
-              <div class="progress-bar"><div class="progress"></div></div>
+      
+            <!-- Title -->
+            <h3 class="contact-title">Get in Touch</h3>
+      
+            <!-- Social Links -->
+            <div class="contact-links">
+              <a href="mailto:your-email@gmail.com" class="contact-link">
+                <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Gmail"> Gmail
+              </a>
+              <a href="https://www.linkedin.com/in/your-profile" target="_blank" class="contact-link">
+                <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn"> LinkedIn
+              </a>
+              <a href="https://github.com/yourusername" target="_blank" class="contact-link">
+                <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub"> GitHub
+              </a>
             </div>
           </div>
-      
-          <!-- Business Intelligence & Reporting -->
-          <div class="skill-category">
-            <h3>Business Intelligence & Reporting</h3>
-            <div class="skill-card intermediate" data-progress="80%">
-              <span class="skill-name">Power BI, Google Data Studio</span>
-              <div class="progress-bar"><div class="progress"></div></div>
-            </div>
-            <div class="skill-card intermediate" data-progress="75%">
-              <span class="skill-name">SQL Server Reporting Services (SSRS)</span>
-              <div class="progress-bar"><div class="progress"></div></div>
-            </div>
-          </div>
-      
-          <!-- Machine Learning -->
-          <div class="skill-category">
-            <h3>Machine Learning</h3>
-            <div class="skill-card basic" data-progress="65%">
-              <span class="skill-name">Scikit-learn, TensorFlow (Basic)</span>
-              <div class="progress-bar"><div class="progress"></div></div>
-            </div>
-            <div class="skill-card basic" data-progress="60%">
-              <span class="skill-name">Deep Learning (LSTM, CNN – Conceptual)</span>
-              <div class="progress-bar"><div class="progress"></div></div>
-            </div>
-          </div>
-      
-          <!-- Cloud & Containerisation -->
-          <div class="skill-category">
-            <h3>Cloud & Containerisation</h3>
-            <div class="skill-card intermediate" data-progress="80%">
-              <span class="skill-name">AWS (S3, EMR, Kinesis, Lambda, Glue, Redshift)</span>
-              <div class="progress-bar"><div class="progress"></div></div>
-            </div>
-            <div class="skill-card intermediate" data-progress="75%">
-              <span class="skill-name">Azure (Data Factory, Synapse, Blob Storage)</span>
-              <div class="progress-bar"><div class="progress"></div></div>
-            </div>
-            <div class="skill-card basic" data-progress="65%">
-              <span class="skill-name">Docker (Containerised ETL Jobs)</span>
-              <div class="progress-bar"><div class="progress"></div></div>
-            </div>
-          </div>
-      
-        </div> <!-- End of Skills Container -->
+        </div>
       </section>
       
-            
-      
-      <section id="contact" class="section contact-section">
-        <h2>Contact Me</h2>
-        <form action="https://formspree.io/f/yourFormID" method="POST" class="contact-form">
-          
-          <label for="name">Name:</label>
-          <input type="text" name="name" id="name" placeholder="Enter your full name" required />
-          
-          <label for="email">Email:</label>
-          <input type="email" name="email" id="email" placeholder="Enter your email address" required />
-          
-          <label for="message">Message:</label>
-          <textarea name="message" id="message" rows="5" placeholder="Type your message here..." required></textarea>
-          
-          <button type="submit">Send Message</button>
-        </form>
-      </section>
       
       
   </main>
@@ -509,7 +591,55 @@
     });
     
   </script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      document.querySelectorAll(".skill-card").forEach(card => {
+        const progress = card.querySelector(".progress");
+        const value = card.getAttribute("data-progress");
+        progress.style.width = value;
+      });
+    });
+    </script>
+<script>
+  const track = document.querySelector('.carousel-track');
+  const slides = Array.from(track.children);
+  const nextBtn = document.getElementById('nextSlide');
+  const prevBtn = document.getElementById('prevSlide');
+  const dots = Array.from(document.querySelectorAll('.dot'));
   
+  let slideIndex = 0;
+  const slidesToShow = 3;
+  
+  function updateSlidePosition() {
+    const slideWidth = slides[0].getBoundingClientRect().width;
+    track.style.transform = `translateX(-${slideIndex * slideWidth}px)`;
+    dots.forEach(dot => dot.classList.remove('active'));
+    dots[slideIndex] && dots[slideIndex].classList.add('active');
+  }
+  
+  // Next Slide
+  nextBtn.addEventListener('click', () => {
+    if (slideIndex < slides.length - slidesToShow) slideIndex++;
+    else slideIndex = 0;
+    updateSlidePosition();
+  });
+  
+  // Previous Slide
+  prevBtn.addEventListener('click', () => {
+    if (slideIndex > 0) slideIndex--;
+    else slideIndex = slides.length - slidesToShow;
+    updateSlidePosition();
+  });
+  
+  // Dot navigation
+  dots.forEach((dot, idx) => {
+    dot.addEventListener('click', () => {
+      slideIndex = idx;
+      updateSlidePosition();
+    });
+  });
+  </script>
+    
   
 </body>
 </html>
