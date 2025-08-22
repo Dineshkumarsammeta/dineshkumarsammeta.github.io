@@ -91,7 +91,7 @@
       
           <!-- Description -->
           <div class="about-description">
-            <h2><span class="hover-underline">About Me</span></h2>
+            <h2 class="portfolio-heading" >About Me</span></h2>
             <p>
               I'm Sammeta Dinesh Kumar, a data engineer with 2+ years of experience designing scalable data pipelines, real-time systems, and cloud-native solutions. I hold an MSc in Advanced Computer Science from the University of Leicester and a B.Tech from VIT University.
             </p>
@@ -138,7 +138,7 @@
       </section>
       
         <section id="resume" class="section resume-section">
-          <h2>Resume</h2>
+          <h2 class="portfolio-heading" >Resume</h2>
           <p>You can preview or download my resume below to learn more about my qualifications, experience, and technical skills.</p>
         
           <div class="resume-buttons">
@@ -152,7 +152,8 @@
         </section>
       
       <section id="experience" class="section experience-section">
-        <h2>Experience</h2>
+        
+        <h2 class="portfolio-heading">Experience</h2>
       
         <div class="timeline">
           <!-- Timeline Item 5 -->
@@ -207,9 +208,11 @@
             </div>
           </div>
           </div>
-      </section>
+          <img src="assets/exp3.jpeg" alt="experience Background" class="exp-bg-img" />
+        
+        </section>
       <section id="projects" class="section projects-section">
-        <h1>Projects</h1>
+        <h2 class="portfolio-heading" >Projects</h2>
       
         <!-- Carousel wrapper -->
         <div class="carousel-wrapper-full">
@@ -233,11 +236,11 @@
               </li>
               <!-- Project Card 2 -->
               <li class="carousel-slide">
-                <div class="project-card">
+                <div class="project-card">    
                   <div class="project-image-wrapper">
                     <img src="assets/ukhousingp.jpeg" alt="Project 2 Preview" class="project-image">
                   </div>
-                  <h3>ML model predicting house prices</h3>
+                  <h3>ML Model Predicting House Prices</h3>
                   <p>Developed a data-driven house price prediction system for 15+ UK locations using Python, geospatial data, and 25,000+ property records. Applied EDA and machine learning models (Random Forest, XGBoost) achieving 90%+ R², providing actionable insights through interactive dashboards for investors and real estate professionals.</p>
                   <div class="tools-used">
                     <span>Arduino</span><span>MATLAB</span><span>Python</span><span>Excel</span>
@@ -318,9 +321,9 @@
       <script src="scripts.js" defer></script>
 
       <section id="portfolio" class="section portfolio-section">
-        <h2>Portfolio</h2>
-      
-        <h3 class="sub-title">Education</h3>
+       
+        
+        <h2 class="portfolio-heading">Education</h2>
         <div class="timeline">
           <!-- University 1 -->
           <div class="timeline-item">
@@ -367,72 +370,64 @@
             </div>
           </div>
         </div>
+        <img src="assets/edu.jpg" alt="Education Background" class="edu-bg-img" />
+      
       </section>
-
-      <section id="certification" class="section certification-section">
-        <h2 class="section-title">Certifications</h2>
+      <section id="certifications" class="cert-section">
+        <h2 class="portfolio-heading">Certifications</h2>
       
-        <div class="cert-scroll-wrapper">
-          <button class="scroll-btn left" onclick="scrollCerts('left')">&#10094;</button>
-      
-          <div class="cert-card-container" id="cert-card-container">
-            <!-- Certificate Card 1 -->
-            <div class="cert-card">
-              <div class="cert-icon">🎓</div>
-              <h3>Data Analytics</h3>
-              <h4>Google</h4>
-              <p class="cert-date">Issued: Jan 2024</p>
-              <p>Gained hands-on experience in data cleaning, analysis, and visualization using SQL and Python.</p>
-              <a href="#" target="_blank" class="verify-link">Verify Certificate</a>
-            </div>
-      
-            <!-- Certificate Card 2 -->
-            <div class="cert-card">
-              <div class="cert-icon">💻</div>
-              <h3>Full Stack Web Dev</h3>
-              <h4>freeCodeCamp</h4>
-              <p class="cert-date">Issued: Mar 2024</p>
-              <p>Built full-stack web apps with Node.js, Express, MongoDB, and React.</p>
-              <a href="#" target="_blank" class="verify-link">Verify Certificate</a>
-            </div>
-      
-            <!-- Certificate Card 3 -->
-            <div class="cert-card">
-              <div class="cert-icon">📊</div>
-              <h3>Excel for Business</h3>
-              <h4>Coursera</h4>
-              <p class="cert-date">Issued: May 2024</p>
-              <p>Learned advanced Excel techniques for data modeling and automation.</p>
-              <a href="#" target="_blank" class="verify-link">Verify Certificate</a>
-            </div>
-      
-            <!-- Certificate Card 4 -->
-            <div class="cert-card">
-              <div class="cert-icon">☁️</div>
-              <h3>AWS Cloud Practitioner</h3>
-              <h4>Amazon</h4>
-              <p class="cert-date">Issued: June 2024</p>
-              <p>Understood AWS cloud concepts and best practices for cloud architecture.</p>
-              <a href="#" target="_blank" class="verify-link">Verify Certificate</a>
-            </div>
-      
-            <!-- Certificate Card 5 -->
-            <div class="cert-card">
-              <div class="cert-icon">🔐</div>
-              <h3>Cybersecurity Basics</h3>
-              <h4>IBM SkillsBuild</h4>
-              <p class="cert-date">Issued: July 2024</p>
-              <p>Covered essential topics in cybersecurity including threats, tools, and networks.</p>
-              <a href="#" target="_blank" class="verify-link">Verify Certificate</a>
-            </div>
+        <!-- Certificate Cards Grid -->
+        <div class="cert-grid">
+          <div class="cert-card">
+            <div class="cert-icon">🎓</div>
+            <h3>Data Analytics</h3>
+            <h4>Google</h4>
+            <p>Issued: Jan 2024</p>
+            <p>Hands-on experience in data cleaning and visualization.</p>
+            <a href="#" class="verify-link">Verify Certificate</a>
           </div>
-      
-          <button class="scroll-btn right" onclick="scrollCerts('right')">&#10095;</button>
+        
+          <div class="cert-card">
+            <div class="cert-icon">💻</div>
+            <h3>Full Stack Web Dev</h3>
+            <h4>freeCodeCamp</h4>
+            <p>Issued: Mar 2024</p>
+            <p>Built full-stack apps with Node.js, MongoDB, React.</p>
+            <a href="#" class="verify-link">Verify Certificate</a>
+          </div>
+        
+          <div class="cert-card">
+            <div class="cert-icon">📊</div>
+            <h3>Excel for Business</h3>
+            <h4>Coursera</h4>
+            <p>Issued: May 2024</p>
+            <p>Advanced Excel techniques for modeling and automation.</p>
+            <a href="#" class="verify-link">Verify Certificate</a>
+          </div>
+        
+          <div class="cert-card">
+            <div class="cert-icon">☁️</div>
+            <h3>AWS Practitioner</h3>
+            <h4>Amazon</h4>
+            <p>Issued: June 2024</p>
+            <p>Learned AWS cloud concepts and best practices.</p>
+            <a href="#" class="verify-link">Verify Certificate</a>
+          </div>
+        
+          <div class="cert-card">
+            <div class="cert-icon">🔐</div>
+            <h3>Cybersecurity Basics</h3>
+            <h4>IBM SkillsBuild</h4>
+            <p>Issued: July 2024</p>
+            <p>Covered threats, tools, and networks in cybersecurity.</p>
+            <a href="#" class="verify-link">Verify Certificate</a>
+          </div>
         </div>
+        
       </section>
-      <section id="skills" class="skillbook-section">
+            <section id="skills" class="skillbook-section">
         <!-- Section Heading -->
-        <h2 class="skillbook-heading">My Skill Book</h2>
+        <h2 class="portfolio-heading">My Skill Book</h2>
       
         <!-- Floating Skills Grid Container -->
         <div class="skillbook-floating-container">
@@ -513,7 +508,7 @@
         </div>
       </section>
       <section id="contact" class="contact-section">
-        <h2 class="contact-heading">Contact Me</h2>
+        <h2 class="portfolio-heading" >Contact Me</h2>
       
         <div class="contact-container">
           <!-- Left: Contact Form -->
