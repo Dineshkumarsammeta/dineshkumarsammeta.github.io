@@ -1,4 +1,3 @@
-/* Reset some default styles */
 * {
     margin: 0;
     padding: 0;
@@ -1470,13 +1469,7 @@ body {
   z-index: 1;
 }
 /* Section */
-.cert-section  {
-  position: relative;
-  padding: 80px 20px;
-  background: url('your-background.jpg') no-repeat center/cover;
-  color: #fff;
-  text-align: center;
-}
+
 
 
 /* Heading */
