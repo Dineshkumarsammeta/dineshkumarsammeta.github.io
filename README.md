@@ -47,8 +47,8 @@ I build scalable, data-driven applications and pipelines using tools like Python
 
 ## 📫 Contact Me
 
-- [LinkedIn](https://www.linkedin.com/in/sammetadinesh)  
-- [GitHub](https://github.com/dineshsammeta1234)  
+- [LinkedIn](https://www.linkedin.com/in/dineshsammeta/)  
+- [GitHub](https://github.com/Dineshkumarsammeta/)  
 - 📧 Email: sammetadineshkumar@gmail.com  
   
 
