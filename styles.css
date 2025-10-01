@@ -1911,8 +1911,32 @@ body {
   transition: transform 0.3s;
 }
 
-.skillbook-card:hover .skillbook-img {
-  transform: scale(1.05);
+.skillbook-card:hover {
+  transform: translateY(-5px);
+}
+
+/* The hidden skill list */
+.skillbook-list {
+  list-style: none;
+  margin: 10px 0 0;
+  padding: 0;
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+/* Show list when hovered */
+.skillbook-card:hover .skillbook-list {
+  opacity: 1;
+  max-height: 200px; /* adjust if list is long */
+}
+
+/* Optional styling for list items */
+.skillbook-list li {
+  font-size: 14px;
+  padding: 4px 0;
+  color: #fffdfd;
 }
 
 /* Download button floating at bottom of container */
